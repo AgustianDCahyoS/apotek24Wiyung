@@ -81,7 +81,7 @@ const PRODUCTS = [
   { id: "kec-05", nama: "Biolastin Cr 10g", kemasan: "10g", kategori: "kecantikan", golongan: "ringan", harga: 42000, img: "img/cantik5.jpg" },
   { id: "kec-06", nama: "Derma XP Glycore 10 Cr 10 Gram", kemasan: "10 Gram", kategori: "kecantikan", golongan: "ringan", harga: 55000, img: "img/cantik6.jpg" },
   { id: "kec-07", nama: "QV Skin Lot 250ml", kemasan: "250ml", kategori: "kecantikan", golongan: null, harga: 65000, img: "img/cantik7.png" },
-  { id: "kec-08", nama: "Acanthe Sunscreen Cr SPF 30 30g", kemasan: "30g", kategori: "kecantikan", golongan: null, harga: 48000, img: "img/cantik8.jpeg" },
+  { id: "kec-08", nama: "Acanthe Sunscreen Cr SPF 30 30g", kemasan: "30g", kategori: "kecantikan", golongan: null, harga: 48000, img: "img/cantik8.jpg" },
 
   // ===== 8. MATA (8) =====
   { id: "mat-01", nama: "Alegysal 0.1% Eye Drop 5ml", kemasan: "5ml", kategori: "mata", golongan: "keras", harga: 45000, img: "img/mata1.png" },
