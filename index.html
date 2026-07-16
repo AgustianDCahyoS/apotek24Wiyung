@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apotek K24 Wiyung Surabaya - Apotek 24 Jam</title>
+  <meta name="description" content="Apotek K24 Wiyung Surabaya - Apotek 24 jam melayani kebutuhan obat, herbal, suplemen, dan kesehatan Anda." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Topbar -->
+  <div class="topbar">
+  <div class="container d-flex flex-wrap align-items-center justify-content-center justify-content-md-between gap-3 gap-md-0 py-2">
+   <a href="https://www.google.com/maps?q=Apotek+K24+Wiyung+Surabaya,-7.3039169,112.6842759&z=17" target="_blank" class="footer-contact-item text-decoration-none">
+  <div class="footer-contact-icon">
+    <i class="bi bi-geo-alt-fill"></i>
+  </div>
+  <div class="footer-contact-text">Jl. Raya Menganti, Wiyung</div>
+</a>
+ <a href="https://www.instagram.com/k24wiyungsurabaya/" onclick="window.open(this.href, '_blank'); return false;" class="topbar-item">
+  <i class="bi bi-instagram"></i>
+  <span>k24wiyungsurabaya</span>
+    <a href="tel:031-7670542" class="topbar-item">
+      <i class="bi bi-telephone-fill"></i>
+      <span>031-7670542</span>
+    </a>
+  </div>
+</div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-k24">
+    <div class="container">
+      <a class="navbar-brand-k24" href="index.html">
+        <div class="brand-logo-circle">
+          <img src="img/logo-k24.jpg" alt="Apotek K24 Wiyung" style="width:100%;height:100%;object-fit:contain;">
+        </div>
+        <div class="brand-logo-text">Apotek K24<span>Wiyung Surabaya</span></div>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMain">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMain">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+          <li class="nav-item"><a class="nav-link" href="katalog.html">Katalog Produk</a></li>
+          <li class="nav-item"><a class="nav-link" href="kontak.html">Kontak</a></li>
+          <li class="nav-item"><a class="nav-link" href="profil.html">Profil</a></li>
+          <li class="nav-item"><a class="nav-link" href="berita.html">Edukasi</a></li>
+        </ul>
+        <div class="d-flex align-items-center gap-2 position-relative">
+          <a href="keranjang.html" class="cart-nav-wrap text-white">
+            <i class="bi bi-cart3"></i>
+            <span class="cart-badge">0</span>
+          </a>
+          <div class="cart-dropdown" id="cartDropdown">
+            <div class="cart-dropdown-header">Keranjang Belanja</div>
+            <div class="cart-dropdown-items" id="cartDropdownItems"></div>
+            <div class="cart-dropdown-footer" id="cartDropdownFooter" style="display:none">
+              <div class="cart-dropdown-total" id="cartDropdownTotal"></div>
+              <div class="cart-dropdown-actions">
+                <a href="keranjang.html" class="btn-view-cart">Lihat Keranjang</a>
+                <a href="keranjang.html" class="btn-checkout-cart">Checkout</a>
+              </div>
+            </div>
+          </div>
+          <a href="katalog.html" class="btn-order">Pemesanan Online</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+<section class="hero-section" style="background-image: url('img/potohero.png'); background-size: cover; background-position: center; min-height: 80vh; display: flex; align-items: center;">
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-content" data-aos="fade-up">
+      <span class="hero-badge"><i class="bi bi-clock-history"></i> Buka 24 Jam Nonstop</span>
+      
+      <h1 style="color: white;">Apotek K24,<br>Apoteknya<br>Indonesia<br>Apotek K24 Wiyung</h1>
+      
+      <p style="color: rgba(255,255,255,0.85);">Melayani kebutuhan obat, herbal, suplemen, dan kesehatan keluarga Anda 24 jam nonstop setiap hari dengan produk berkualitas dan harga bersaing.</p>
+      
+      <a href="katalog.html" class="btn-order btn btn-success rounded-pill px-4">Pemesanan Online</a>
+    </div>
+  </div>
+</section>
+
+  <!-- Categories Section -->
+  <section style="padding:60px 0;background:var(--bg-light)">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <span class="section-label">Kategori</span>
+        <h2 class="section-title">Pilih Kategori <span>Kebutuhan Anda</span></h2>
+        <p class="section-subtitle mx-auto">Temukan produk kesehatan sesuai kebutuhan Anda dari berbagai kategori yang tersedia.</p>
+      </div>
+      <div class="row g-3 g-md-4">
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="0">
+          <a href="katalog.html?cat=obat" class="category-card">
+            <div class="category-icon-wrap"><i class="bi bi-capsule-pill"></i></div>
+            <div class="category-name">Obat</div>
+            <div class="category-subtext">Obat-obatan</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="50">
+          <a href="katalog.html?cat=suplemen" class="category-card">
+            <div class="category-icon-wrap"><i class="bi bi-droplet-half"></i></div>
+            <div class="category-name">Suplemen</div>
+            <div class="category-subtext">Suplemen Kesehatan</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+          <a href="katalog.html?cat=nutrisi" class="category-card">
+            <div class="category-icon-wrap"><i class="bi bi-egg-fried"></i></div>
+            <div class="category-name">Nutrisi</div>
+            <div class="category-subtext">Nutrisi Seimbang</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="150">
+          <a href="katalog.html?cat=herbal" class="category-card">
+            <div class="category-icon-wrap"><i class="bi bi-flower1"></i></div>
+            <div class="category-name">Herbal</div>
+            <div class="category-subtext">Herbal Alami</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+          <a href="katalog.html?cat=bayi" class="category-card">
+            <div class="category-icon-wrap"><i class="bi bi-balloon-heart"></i></div>
+            <div class="category-name">Produk Bayi</div>
+            <div class="category-subtext">Perawatan Si Kecil</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="250">
+          <a href="katalog.html?cat=kontrasepsi" class="category-card">
+            <div class="category-icon-wrap"><i class="bi bi-shield-plus"></i></div>
+            <div class="category-name">Kontrasepsi</div>
+            <div class="category-subtext">Keluarga Berencana</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+          <a href="katalog.html?cat=kecantikan" class="category-card">
+            <div class="category-icon-wrap"><i class="bi bi-stars"></i></div>
+            <div class="category-name">Kecantikan</div>
+            <div class="category-subtext">Perawatan Diri</div>
+          </a>
+        </div>
+        <div class="col-6 col-md-3" data-aos="zoom-in" data-aos-delay="350">
+          <a href="katalog.html?cat=mata" class="category-card">
+            <div class="category-icon-wrap"><i class="bi bi-eye"></i></div>
+            <div class="category-name">Mata</div>
+            <div class="category-subtext">Kesehatan Mata</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products Section -->
+  <section style="padding:60px 0">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-4" data-aos="fade-up">
+        <div>
+          <span class="section-label">Produk Pilihan</span>
+          <h2 class="section-title mb-0">Produk <span>Terlaris</span></h2>
+        </div>
+        <a href="katalog.html" class="read-more-link">Lihat Semua <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="row g-3 g-md-4" id="featuredProducts"></div>
+    </div>
+  </section>
+
+  <!-- News Section -->
+  <section style="padding:60px 0;background:var(--bg-light)">
+    <div class="container">
+      <div class="d-flex align-items-center justify-content-between mb-4" data-aos="fade-up">
+        <div>
+          <span class="section-label">Edukasi</span>
+          <h2 class="section-title mb-0">Artikel <span>Kesehatan</span></h2>
+        </div>
+        <a href="berita-detail-1.html" class="read-more-link">Lihat Semua <i class="bi bi-arrow-right"></i></a>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+          <a href="berita-detail-1.html" class="news-card">
+            <img src="img/berita1 (1).png">
+            <div class="news-card-body">
+              <div class="news-card-date"><i class="bi bi-calendar3"></i> 11 Juli 2025</div>
+              <h3 class="news-card-title">kenapa hipertensi dijuluki silent killer</h3>
+              <p class="news-card-excerpt">DI Indonesia, hipertensi dijuluki silent killer karena 
+pengidapnya tidak memiliki keluhan ataupun gejala
+Berikut Faktor Faktor resikonya.</p>
+              <span class="read-more-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <a href="berita-detail-2.html" class="news-card">
+            <img src="https://images.pexels.com/photos/3683074/pexels-photo-3683074.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Vitamin">
+            <div class="news-card-body">
+              <div class="news-card-date"><i class="bi bi-calendar3"></i>12 Januari 2025<</div>
+              <h3 class="news-card-title">Pentingnya Suplemen Vitamin untuk Imunitas</h3>
+              <p class="news-card-excerpt">Vitamin memegang peranan penting dalam menjaga sistem imun. Pelajari jenis-jenis vitamin esensial dan cara memilih suplemen yang tepat sesuai kebutuhan harian Anda.</p>
+              <span class="read-more-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <a href="berita-detail-3.html" class="news-card">
+            <img src="img/berita1 (4).png"> 
+            <div class="news-card-body">
+              <div class="news-card-date"><i class="bi bi-calendar3"></i> 14 November 2024</div>
+              <h3 class="news-card-title">Penyakit Yang Rentan DI Derita Anak Sekolah</h3>
+              <p class="news-card-excerpt">Penyakit menular sangat rentan di sekolah. Penyebarannya baik dari teman sekelas yang sedang sakit atau lingkungan sekolah yang tidak bersih. Oleh karena itu, orang tua harus selalu waspada dan melakukan berbagai langkah pencegahan agar kesehatan anak tetap terjaga.</p>
+              <span class="read-more-link">Baca Selengkapnya <i class="bi bi-arrow-right"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer-main">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="d-flex align-items-center gap-3 mb-3">
+            <div class="brand-logo-circle">
+              <img src="img/logo-k24.jpg" alt="Apotek K24 Wiyung" style="width:100%;height:100%;object-fit:contain;">
+            </div>
+            <div>
+              <div class="footer-brand-name">Apotek K24 Wiyung</div>
+              <div class="footer-brand-sub"> Apotek K24 Wiyung</div>
+            </div>
+          </div>
+          <p style="color:rgba(255,255,255,0.7);font-size:14px;line-height:1.7">Jl. Raya Menganti, Kec. Wiyung, Kota Surabaya, Jawa Timur. Melayani kebutuhan kesehatan Anda 24 jam nonstop.</p>
+          <div class="social-links">
+            <a href="https://www.instagram.com/k24wiyungsurabaya/" onclick="window.open(this.href, '_blank'); return false;" class="topbar-item">
+  <i class="bi bi-instagram"></i>
+           <a href="https://wa.me/6285778450922" target="_blank" class="topbar-item">
+  <i class="bi bi-whatsapp"></i>
+  <span></span>
+</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">Kontak Kami</h5>
+          <a href="tel:0317670542" class="footer-contact-item text-decoration-none">
+  <div class="footer-contact-icon">
+    <i class="bi bi-telephone-fill"></i>
+  </div>
+  <div class="footer-contact-text">031-7670542</div>
+</a>
+         <a href="https://wa.me/6285778450922" target="_blank" class="footer-contact-item text-decoration-none">
+  <div class="footer-contact-icon">
+    <i class="bi bi-whatsapp"></i>
+  </div>
+  <div class="footer-contact-text">085778450922</div>
+</a>
+          <a href="https://www.instagram.com/k24wiyungsurabaya/" target="_blank" class="footer-contact-item text-decoration-none">
+  <div class="footer-contact-icon">
+    <i class="bi bi-instagram"></i>
+  </div>
+  <div class="footer-contact-text">k24wiyungsurabaya</div>
+</a>
+          <a href="https://www.google.com/maps?q=Apotek+K24+Wiyung+Surabaya,-7.3039169,112.6842759&z=17" target="_blank" class="footer-contact-item text-decoration-none">
+  <div class="footer-contact-icon">
+    <i class="bi bi-geo-alt-fill"></i>
+  </div>
+  <div class="footer-contact-text">Jl. Raya Menganti, Wiyung</div>
+</a>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="footer-heading">Jadwal Pelayanan</h5>
+          <div class="footer-hours mb-2">Buka 24 Jam</div>
+          <p style="color:rgba(255,255,255,0.7);font-size:14px">Setiap hari, tanpa libur. Siap melayani kebutuhan obat dan kesehatan Anda kapan saja.</p>
+        </div>
+        
+        <!-- KOLOM KEEPAT: LOKASI DENGAN LIVE MAPS IFRAME -->
+        <div class="col-lg-3 col-md-6">
+          <h5 class="footer-heading">Lokasi</h5>
+          <p style="font-size: 13px; color: rgba(255,255,255,0.85); margin-bottom: 10px;">Jl. Raya Menganti, Kec. Wiyung, Kota Surabaya</p>
+          <div class="map-box">
+            <iframe 
+              src="https://www.google.com/maps?q=Apotek+K24+Wiyung+Surabaya,-7.3039169,112.6842759&z=17&output=embed" 
+              style="border:0; width: 100%; max-width: 280px; height: 160px; border-radius: 15px;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </footer>
+  <div class="footer-bottom"><p>Copyright &copy; 2025 Apotek K24 Wiyung. All Rights Reserved.</p></div>
+
+  <!-- Success Modal (Green - Pemesanan Berhasil) -->
+  <div class="modal fade success-modal" id="successModalGreen" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <div class="success-modal-icon green"><i class="bi bi-check-lg"></i></div>
+          <h3 class="success-modal-title green">Pemesanan Berhasil !!</h3>
+          <p class="success-modal-text">Terima Kasih, Telah Memesan di Apotek K24 Wiyung</p>
+          <p class="success-modal-text">Kami akan menghubungi Anda melalui nomor Handphone</p>
+          <a href="index.html" class="btn-modal-close green">Kembali ke Beranda</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="/assets/js/products.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const featured = PRODUCTS.slice(0, 8);
+      const container = document.getElementById('featuredProducts');
+      if (container) {
+        container.innerHTML = featured.map(productCardHTML).join('');
+        initCartButtons();
+      }
+    });
+  </script>
+</body>
+</html>
